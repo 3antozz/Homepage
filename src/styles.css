@@ -323,9 +323,23 @@ footer .contact-icons {
     text-align: center;
   }
 
+  .contact {
+    text-align: center;
+  }
+
+  .contact > div {
+    justify-content: center;
+  }
+
+  .contact-icons {
+    margin-top: 2rem;
+  }
+
+  
   footer {
     flex-direction: column;
     padding: 0;
+    gap: 0;
   }
 
   footer picture img {
