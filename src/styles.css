@@ -44,7 +44,7 @@ body {
     font-family: 'Roboto', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     display: flex;
     flex-direction: column;
-    gap: 12dvh;
+    gap: 15dvh;
     font-size: 1.1rem;
 }
 
@@ -268,6 +268,10 @@ footer .contact-icons {
     background: linear-gradient(155deg, #0891B2 50%, transparent 50%);
   }
 
+  body {
+    gap: 8dvh;
+  }
+
 
   header picture > img {
     width: 22rem;
@@ -301,6 +305,10 @@ footer .contact-icons {
 
   .icons {
     gap: 2.5rem;
+  }
+
+  .icons img {
+    width: 2.5rem;
   }
 
   header .icons > img {
