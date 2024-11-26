@@ -41,7 +41,316 @@ isolation: isolate;
 }
 
 body {
-    background-color: purple;
+    font-family: 'Roboto', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 12dvh;
+    font-size: 1.1rem;
 }
+
+.trapeze {
+  position: absolute;
+  width: 100%;
+  height: 100dvh;
+  background: linear-gradient(168deg, #0891B2 50%, transparent 50%);
+}
+
+
+h1, h2 {
+  font-family: 'Playfair Display';
+}
+
+article h2 {
+  font-size: max(1.3rem, 1.6vw);
+}
+
+header {
+  display: flex;
+  margin: 5rem 15%;
+  margin-bottom: 0;
+  position: relative;
+}
+
+header picture > img {
+  width: 26.5rem;
+}
+
+picture {
+  flex-shrink: 0;
+  position: relative;
+  align-self: center;
+}
+
+
+picture h1 {
+  line-height: 1.2;
+  position: absolute;
+  bottom: 0;
+  color: white;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  font-size: 3rem;
+  text-shadow: 2px 2px 6px #000000;
+}
+
+header > div {
+  background-color: white;
+  padding: 1.5rem 1.5rem;
+  align-self: center;
+  box-shadow: 2px 2px 6px 0px #80808073;
+  min-width: 380px;
+}
+
+header p {
+  padding-bottom: 2rem;
+  padding-top: 1rem;
+  color: rgb(99, 99, 99);
+}
+
+header .icons {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 1rem;
+  gap: 1.5rem;
+}
+
+.icons img {
+  width: 1.8rem;
+  transition: transform 250ms ease;
+}
+
+.icons img:hover, footer div img:hover {
+  transform: scale(1.5);
+}
+
+
+.articles {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+  gap: 3rem;
+  margin-top: 0.5rem;
+}
+
+article p {
+  color: rgb(99, 99, 99);
+}
+
+main {
+  margin: 0 15%;
+}
+
+main .icons {
+  display: flex;
+  gap: 1rem;
+}
+
+.project-name {
+  display: flex;
+  margin-bottom: 1rem;
+  gap: 1rem;
+}
+
+.project-name h2 {
+  flex: 1;
+}
+
+article {
+  box-shadow: 2px 2px 6px 0px #80808073;
+  transition: transform 250ms ease;
+}
+
+article:hover {
+  transform: scale(1.05);
+}
+
+.project-info {
+  padding: 1rem 1.5rem;
+  padding-bottom: 4rem;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  padding: 3rem 12%;
+  padding-bottom: 1.5rem;
+  background-color: #0891B2;
+  color: white;
+  gap: 1rem;
+}
+
+footer img {
+  width: 38rem;
+  align-self: center;
+}
+
+footer svg {
+  width: 1.6rem;
+  fill: white;
+}
+
+footer div img {
+  width: 2.5rem;
+  outline: white;
+  transition: transform 250ms ease;
+}
+
+footer .contact-icons {
+  display: flex;
+  margin-left: 1rem;
+}
+
+.contact {
+  flex: 1;
+}
+
+.contact > div {
+  display: flex;
+  gap: 1rem;
+}
+
+footer .contact-icons {
+  gap: 1.5rem;
+}
+
+.bottom-margin {
+  margin-bottom: 1rem;
+}
+
+.bottom-margin:nth-child(2) {
+  font-weight: bold;
+}
+
+@media (min-width: 711px) and (max-width: 1100px) {
+
+  header picture > img {
+    width: 22rem;
+  }
+
+  header picture {
+    float: left;
+    margin: -4rem 1rem 1rem -3rem;
+  }
+
+  header > div {
+    box-shadow: none;
+  }
+
+  header {
+    box-shadow: 2px 2px 6px 0px #80808073;
+    margin: 12% 13%;
+    display: block;
+    margin-bottom: 0;
+  }
+
+  picture h1 {
+    top: 0;
+    left: 85%;
+    transform: none;
+  }
+
+
+  footer {
+    padding: 3rem 8%;
+    padding-bottom: 1.5rem;
+  }
+
+
+  footer picture img {
+    width: min(500px, 52vw);
+  }
+  
+}
+
+@media (max-width: 711px ) {
+
+  .trapeze {
+    height: 120dvh;
+    background: linear-gradient(155deg, #0891B2 50%, transparent 50%);
+  }
+
+
+  header picture > img {
+    width: 22rem;
+  }
+
+  header {
+    flex-direction: column;
+    margin: 10% 10%;
+    margin-bottom: 0;
+    align-items: center;
+  }
+
+  header p {
+    padding: 0;
+    padding-top: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  header > div {
+    box-shadow: none;
+    padding: 0;
+    padding-top: 1rem;
+    background: none;
+  }
+
+  header .icons {
+    justify-content: center;
+    margin: 0;
+  }
+
+  .icons {
+    gap: 2.5rem;
+  }
+
+  header .icons > img {
+    width: 2.8rem;
+  }
+
+  main .icons > img {
+    width: 7vw;
+  }
+
+  header h1 {
+    margin-top: 0.5rem;
+  }
+
+  main {
+    margin: 0 10%;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+
+  footer {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  footer picture img {
+    width: 100%;
+  }
+
+
+  footer > div {
+    padding: 2rem 10%;
+  }
+
+  .contact-icons {
+    justify-content: center;
+    gap: 1.5rem;
+  }
+
+  footer div > img {
+    width: 3rem;
+  }
+
+  
+}
+
+
+
+
 
 
