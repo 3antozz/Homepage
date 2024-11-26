@@ -23,13 +23,13 @@ module.exports = {
       {
         test: /\.html$/i,
         loader: "html-loader",
-        generator: {
-          filename: 'images/[name][hash][ext]',
-        },
       },
       {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
         type: "asset/resource",
+        generator: {
+          filename: 'images/[name][hash][ext]',
+        },
       },
     ],
   },
